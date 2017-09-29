@@ -4,11 +4,11 @@ My resume is built based on [gaocegege/Deddy-Resume-for-Chinese](https://github.
 
 ## Chinese Version
 
-[PDF](./docs/resume-cn.pdf)
+[PDF](http://gaocegege.com/resume/resume.pdf)
 
 ## English Version
 
-[PDF](./docs/resume.pdf)
+[PDF](http://gaocegege.com/resume/resume-cn.pdf)
 
 ## Old Versions
 
