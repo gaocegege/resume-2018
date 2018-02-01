@@ -15,16 +15,16 @@
 % default. If you get compilation errors saying a font is missing, find the line
 % on which the font is used and either change it to a font included with your
 % operating system or comment the line out to use the default font.
-% 
+%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-% 
+%
 % TODO:
 % 1. Integrate biber/bibtex for article citation under publications.
 % 2. Figure out a smoother way for the document to flow onto the next page.
 % 3. Add styling information for a "Projects/Hacks" section.
 % 4. Add location/address information
 % 5. Merge OpenFont and MacFonts as a single sty with options.
-% 
+%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %
 % CHANGELOG:
@@ -47,10 +47,10 @@
 
 \documentclass[]{deedy-resume-openfont}
 \usepackage{fancyhdr}
-    
+
 \pagestyle{fancy}
 \fancyhf{}
-    
+
 \begin{document}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -60,39 +60,38 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \lastupdated
 
+\namesection{高}{策}{ \urlstyle{same}\href{http://gaocegege.com}{gaocegege.com}| 1592 1592 066 | \href{mailto:ce.gao@outlook.com}{ce.gao@outlook.com}
+}
+
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %
 %     COLUMN ONE
 %
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-\begin{minipage}[t]{0.2\textwidth}
-
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%
-%     TITLE NAME
-%
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\section{高策}
-\descript{\urlstyle{same}\href{mailto:ce.gao@outlook.com}{ce.gao@outlook.com}}
-\descript{1592 1592 066}
+\begin{minipage}[t]{0.3\textwidth}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %     EDUCATION
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-\section{教育经历} 
+\section{教育经历}
 \sectionsep
 
 \subsection{上海交通大学}
-\descript{硕士学位，主修软件工程}
+\descript{工学硕士学位，软件工程}
+\descript{GPA 3.68/4.0}
 \location{2016.09-2019.03}
 \sectionsep
 
 \subsection{上海交通大学}
-\descript{学士学位，主修软件工程}
-\descript{辅修法学}
+\descript{工学学士学位，软件工程}
 \location{2012.09-2016.09}
+\sectionsep
+
+\subsection{上海交通大学}
+\descript{第二专业法学学士学位，法律}
+\location{2014.02-2016.09}
 \sectionsep
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -102,14 +101,36 @@
 \section{相关链接}
 \sectionsep
 Blog://  \href{http://gaocegege.com/Blog}{gaocegege.com/Blog} \\
-{(总计\textbf{8万}阅读,\textbf{3万}访客)} \\    
+{(总计\textbf{8万}阅读,\textbf{3万}访客)} \\
 Github:// \href{https://github.com/gaocegege}{gaocegege} \\
 {(\textbf{ 480+ }关注者)} \\
 LinkedIn://  \href{https://www.linkedin.com/in/gaocegege}{gaocegege} \\
+知乎:// \href{https://www.zhihu.com/people/gaocegege}{gaocegege} \\
+\sectionsep
+
+\section{部分博文}
+\sectionsep
+
+\href{http://gaocegege.com/Blog/%E9%9A%8F%E7%AC%94/consistency}{小议分布式系统的一致性模型} \\
+\href{http://gaocegege.com/Blog/%E6%BA%90%E7%A0%81%E5%88%86%E6%9E%90/kubernetes-scheduler}{浅入了解容器编排框架调度器之 Kubernetes} \\
+\href{http://gaocegege.com/Blog/%E5%AE%89%E5%88%A9/unikernel-book}{Unikernel：从不入门到入门} \\
+\href{http://gaocegege.com/Blog/%E5%AE%89%E5%88%A9/micro-services}{微服务：从不入门到入门} \\
+\href{http://gaocegege.com/Blog/moby/moby}{Moby 与 Docker 的关系
+} \\
+\href{http://gaocegege.com/Blog/%E9%9A%8F%E7%AC%94/linuxcon}{LinuxCon Recap} \\
+\sectionsep
 
 \section{技术分享}
 \sectionsep
-\href{http://slides.com/gaocegege/processing-r}{Processing.R} @ \href{http://china-r.org/sh2017/index.html}{第十届中国R会议}
+\href{http://slides.com/gaocegege/processing-r}{Processing.R} @ \href{http://china-r.org/sh2017/index.html}{第十届中国R会议} \\
+\href{https://docs.google.com/presentation/d/1ylRT4VvydWbR7SyTQzNZOLpkXtgSZJiEl5nmXY1KuJw/edit?usp=sharing}{Processing.R} @ \href{https://zhuanlan.zhihu.com/dongyue}{东岳} 2017 技术分享 \\
+\href{https://docs.google.com/presentation/d/1Ru4Dm9TLoyxnJgFqvsCHrb82VT622H-zBSgAe1vJL44/edit?usp=sharing}{Docker 介绍}  @ \href{https://zhuanlan.zhihu.com/dongyue}{东岳} 2016 技术分享 \\
+\sectionsep
+
+\section{语言能力}
+\sectionsep
+英语六级 531 \\
+\sectionsep
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %     COURSEWORK
@@ -128,57 +149,57 @@ LinkedIn://  \href{https://www.linkedin.com/in/gaocegege}{gaocegege} \\
 % \sectionsep
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%     SKILLS
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
-\section{编程技能}
-\sectionsep
-\subsection{编程语言}
-\location{超过 5000 行}
-Go \textbullet{} Python \textbullet{} C++ \textbullet{} Java \\
-\location{1000 - 5000 行}
-R \textbullet{} C \textbullet{} Scala \textbullet{} \LaTeX\ \\
-\sectionsep
-
-\subsection{云计算}
-\location{一般}
-Docker \textbullet{} Kubernetes \\
-\sectionsep
-
-\subsection{DevOps}
-\location{一般}
-微服务 \textbullet{} Jenkins \textbullet{} Travis CI  \\
-\sectionsep
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %
 %     COLUMN TWO
 %
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-\end{minipage} 
+\end{minipage}
 \hfill
-\begin{minipage}[t]{0.78\textwidth} 
+\begin{minipage}[t]{0.68\textwidth}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %     EXPERIENCE
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \section{实习经历}
+
 \sectionsep
-\runsubsection{谷歌编程之夏}
-\descript{学生参与者}
+\runsubsection{才云科技}
+\descript{合作研究学生}
+\location{2017.12 - Now | 远程}
+\vspace{\topsep}
+\begin{tightemize}
+    \item 为 \href{https://github.com/kubeflow/kubeflow}{Kubeflow} 社区维护 \href{https://github.com/tensorflow/k8s}{tensorflow/k8s}，进行 event driven 的重构，分离 CRD 与 operator 等
+    \item 分析优化机器学习任务的调度，提高资源的利用率，更好地支持 TensorFlow 分布式任务
+\end{tightemize}
+\sectionsep
+
+\sectionsep
+\runsubsection{coala 社区}
+\descript{Google Code In 2018 导师}
+\location{2017.12 - Now | 远程}
+\vspace{\topsep}
+\begin{tightemize}
+    \item 基于 Language Server Protocol 实现 coala 在 Visual Studio Code 上的插件
+    \item 担任 Google Code In 2018 导师，指导来自全球的高中生参与开源项目
+\end{tightemize}
+\sectionsep
+
+\sectionsep
+\runsubsection{Processing 基金会}
+\descript{Google Summer of Code 2017 学生参与者}
 \location{2017.05 - 2017.09 | 远程}
 \vspace{\topsep}
 \begin{tightemize}
-    \item 共有 20651 个注册学生，其中 1318 个申请被谷歌接收，\textbf{接收率 6\%}
+    \item 本次 GSoC 共有 20651 个注册学生，其中 1318 个申请被谷歌接收，\textbf{接收率 6\%}
     \item 为 Processing 基金会实现了对 Processing 的 R 语言支持
-    \item 与社区紧密合作，实现对 Processing 库的支持和对 R 包的支持
     \item 所做项目 \href{https://github.com/gaocegege/Processing.R}{\bf Processing.R} 在 GitHub 上获得 \textbf{80 stars}，成为本次编程之夏 star 最多的项目
 \end{tightemize}
 \sectionsep
 
 \runsubsection{摩根士丹利}
-\descript{CIP 项目实习生}
+\descript{项目实习生}
 \location{2017.02-2017.08 | 上海}
 \begin{tightemize}
 \item 优化开源容器调度管理框架 treadmill 的调度器
@@ -198,7 +219,7 @@ Docker \textbullet{} Kubernetes \\
 \descript{Java 研发工程师（实习）| 杭州}
 \location{2015.07-2015.09}
 \begin{tightemize}
-\item 在支付宝国际事业团队从事海外直购业务开发
+\item 在支付宝国际事业部创新业务组任职，从事海外直购业务开发
 \item 实现部分包裹清关的逻辑和后台管理的逻辑
 \end{tightemize}
 \sectionsep
@@ -210,7 +231,7 @@ Docker \textbullet{} Kubernetes \\
 \section{项目与论文}
 \sectionsep
 
-\runsubsection{\href{https://github.com/kubeflow/kubeflow}{kubeflow}}
+\runsubsection{\href{https://github.com/kubeflow/kubeflow}{Kubeflow}}
 \descript{Collaborator}
 \location{2017.12}
 \begin{tightemize}
@@ -239,17 +260,69 @@ Docker \textbullet{} Kubernetes \\
 \sectionsep
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     PUBLICATIONS
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+% \section{Publications}
+% \renewcommand\refname{\vskip -1.5cm} % Couldn't get this working from the .cls file
+% \bibliographystyle{abbrv}
+% \bibliography{publications}
+% \nocite{*}
+
+\end{minipage}
+
+\newpage
+\pagestyle{fancy}
+\fancyhf{}
+
+% PAGE TWO
+
+\begin{minipage}[t]{0.3\textwidth}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     SKILLS
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{编程技能}
+\sectionsep
+\subsection{编程语言}
+\location{超过 5000 行}
+Go \textbullet{} Python \textbullet{} C++ \textbullet{} Java \\
+\location{1000 - 5000 行}
+R \textbullet{} C \textbullet{} Scala \textbullet{} \LaTeX\ \\
+\sectionsep
+
+\subsection{云计算}
+\location{一般}
+Docker \textbullet{} Kubernetes \textbullet{} Kubeflow \\
+\sectionsep
+
+\subsection{DevOps}
+\location{一般}
+微服务 \textbullet{} Jenkins \textbullet{} Travis CI  \\
+\sectionsep
+
+\end{minipage}
+\hfill
+\begin{minipage}[t]{0.68\textwidth}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %     OPEN SOURCE
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \section{开源贡献}
 \begin{tabular}{ll}
-\href{https://github.com/moby/moby/commits?author=gaocegege}{\bf moby/moby} & 实现 docker service ps -q 参数，与 swarmkit 更好集成 \\
+\href{https://github.com/moby/moby/commits?author=gaocegege}{\bf moby/moby} & 实现 docker service ps -q 参数 \\
 \href{https://github.com/opencontainers/runc/commits?author=gaocegege}{\bf opencontainers/runc} & 为了修复 \href{https://github.com/moby/moby/issues/27484}{moby/moby\#27484} 对上游进行的修改 \\
+\href{https://github.com/alibaba/pouch/commits?author=gaocegege}{\bf  alibaba/pouch} & 为其 CI 更新 go 版本, 移除对环境路径的 hack \\
 \href{https://github.com/pingcap/tidb/commits?author=gaocegege}{\bf pingcap/tidb} & 在 travis 里引入了覆盖率测试; 实现 truncate 函数 \\
 \href{https://github.com/prism-river/killy}{prism-river/killy} & Maintainer, Play TiDB in Minecraft \\
-\href{https://github.com/coala/coala-vs-code/commits/master?author=gaocegege}{coala/coala-vs-code} & maintainer，实现 VS Code 插件 \\
-\href{https://github.com/sjtug/SJTUThesis/commits?author=gaocegege}{sjtug/SJTUThesis} & maintainer，维护模板，发布版本 \\
+\href{https://github.com/coala/coala-vs-code/commits/master?author=gaocegege}{coala/coala-vs-code} & Maintainer，实现 VS Code 插件 \\
+\href{https://github.com/gaocegege/maintainer}{Maintainer} & Owner，帮助开发者在 GitHub 上维护项目的工具 \\
+\href{https://github.com/siglt/tosknight}{tosknight} & Owner，记录腾讯等网站用户协议的版本变化 \\
+\href{https://github.com/sjtug/SJTUThesis/commits?author=gaocegege}{sjtug/SJTUThesis} & Maintainer，维护模板，发布版本 \\
+\href{https://github.com/dyweb/Deedy-Resume-for-Chinese}{Deedy-Resume-for-Chinese} & Owner，面向本科生的简历论文模板 \\
+\href{https://github.com/dyweb/electsys-safari}{electsys-safari} & Owner，上海交大选课插件在 Safari 上的实现 \\
 \end{tabular}
 \sectionsep
 
@@ -257,7 +330,7 @@ Docker \textbullet{} Kubernetes \\
 %     AWARDS
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-\section{所获奖项} 
+\section{所获奖项}
 \begin{tabular}{rll}
 2017.10     & 二等奖  & Go 基金会中国黑客马拉松 \\
 2017.10     & PingCAP 专项奖 & Go 基金会中国黑客马拉松 \\
@@ -267,19 +340,9 @@ Docker \textbullet{} Kubernetes \\
 2015.03	    & 二等奖  & 美国大学生数学建模竞赛 \\
 2014.11     & 一等奖 & 中国大学生数学建模竞赛上海赛区 \\
 2014.07	    & 二等奖/杰出个人  & 大众点评校园 Hackathon \\
+2013.09     & 三等奖 & 上海交通大学奖学金 \\
 \end{tabular}
-\sectionsep
+\sectionsep\end{minipage}
 
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%     PUBLICATIONS
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
-% \section{Publications} 
-% \renewcommand\refname{\vskip -1.5cm} % Couldn't get this working from the .cls file
-% \bibliographystyle{abbrv}
-% \bibliography{publications}
-% \nocite{*}
-
-\end{minipage}
 \end{document}
 \documentclass[]{article}
